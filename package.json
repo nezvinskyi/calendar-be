@@ -1,0 +1,27 @@
+{
+  "name": "wallet-be",
+  "version": "1.0.0",
+  "main": "bin/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node bin/server.js",
+    "start:dev": "nodemon bin/server.js"
+  },
+  "repository": "https://github.com/nezvinskyi/calendar-be.git",
+  "author": "Dmitry Nezvinskyi",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "gravatar": "^1.8.2",
+    "joi": "^17.4.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.7",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
