@@ -2,11 +2,18 @@ const { Schema } = require('mongoose');
 
 const eventSchema = Schema(
   {
-    date: {
-      type: Date,
+    start: {
+      type: Number,
+      required: true,
+    },
+    duration: {
+      type: Number,
+      required: true,
     },
     title: {
       type: String,
+      default: 'New Event',
+      required: true,
     },
     userId: {
       type: Schema.Types.ObjectId,

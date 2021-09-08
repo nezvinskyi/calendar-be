@@ -2,7 +2,7 @@ const { Event } = require('../../models');
 
 const addEvent = async (req, res, next) => {
   try {
-    const event = req.body;
+    const event = { ...req.body, userId: req.user._id };
 
     const result = await Event.create(event);
     res.status(201).json({

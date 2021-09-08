@@ -7,7 +7,7 @@ const login = async (req, res, next) => {
   try {
     const user = await service.getOne({ email });
     if (!user || !user.comparePassword(password)) {
-      res.status(401);
+      res.status(HTTP_STATUS.UNAUTHORIZED);
       throw new Error('Email or password is wrong');
     }
     const accessToken = jwtHelper.getAccessToken(user._id);
