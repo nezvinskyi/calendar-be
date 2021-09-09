@@ -1,6 +1,6 @@
 const { Event } = require('../../models');
 
-const deleteEvent = async (req, res) => {
+const deleteEvent = async (req, res, next) => {
   try {
     await Event.findOneAndDelete({ _id: req.params.id });
     res.status(200).json({

@@ -17,7 +17,7 @@ const login = async (req, res, next) => {
       code: HTTP_STATUS.OK,
       data: {
         token: accessToken.token,
-        user: { email: user.email, name: user.name },
+        user: { email: user.email, name: user.name, avatar: user.avatarURL },
       },
     });
   } catch (error) {

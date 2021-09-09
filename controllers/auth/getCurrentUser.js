@@ -8,6 +8,7 @@ const getCurrentUser = (req, res, next) => {
       id: req.user._id,
       email: req.user.email,
       name: req.user.name,
+      avatar: req.user.avatarURL,
     },
   });
 };
