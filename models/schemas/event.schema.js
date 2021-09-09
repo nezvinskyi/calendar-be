@@ -13,7 +13,7 @@ const eventSchema = Schema(
     title: {
       type: String,
       default: 'New Event',
-      required: true,
+      // required: true,
     },
     userId: {
       type: Schema.Types.ObjectId,

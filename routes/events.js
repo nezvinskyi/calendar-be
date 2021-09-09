@@ -7,4 +7,6 @@ router.get('/', authMiddleware, ctrl.getAllEvents);
 
 router.post('/', authMiddleware, ctrl.addEvent);
 
+router.delete('/:id', authMiddleware, ctrl.deleteEvent);
+
 module.exports = router;
